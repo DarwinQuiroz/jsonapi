@@ -28,8 +28,8 @@ class ArticleFactory extends Factory
             'Title' => $this->faker->word,
             'slug' => $this->faker->slug,
             'content' => $this->faker->paragraphs(3, true),
-            'category_id' => Category::factory(),
-            'user_id' => User::factory(),
+            // 'category_id' => Category::factory(),
+            // 'user_id' => User::factory(),
         ];
     }
 }
