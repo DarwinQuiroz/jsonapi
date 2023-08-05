@@ -30,7 +30,7 @@ class ArticleController extends Controller
         return ArticleResource::make($article);
     }
 
-    public function create(Request $request): ArticleResource
+    public function store(Request $request): ArticleResource
     {
         $request->validate([
             'data.attributes.title' => ['required'],
